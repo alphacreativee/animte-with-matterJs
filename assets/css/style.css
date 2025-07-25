@@ -1,0 +1,63 @@
+h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.intro,
+.outro {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.matter-magic {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+  padding: 32px;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.matter-magic-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.matter-magic-content * {
+  pointer-events: auto;
+}
+.object-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.object {
+  position: absolute;
+  width: max-content;
+  font-size: 32px;
+  font-weight: 500;
+  background-color: #fff;
+  color: #0f0f0f;
+  padding: 16px 32px;
+  border-radius: 10rem;
+  cursor: grab;
+  user-select: none;
+  pointer-events: auto;
+  z-index: 2;
+}
+.object:active {
+  cursor: grabbing;
+}
